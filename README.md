@@ -6,3 +6,6 @@ Scheduling System for Healthcare appointments with RPA technology - Bots gather 
 Development: MERN stack based project 
 
 Deployment: Docker
+
+# Commits
+Parth's first push
