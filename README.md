@@ -3,5 +3,6 @@ Scheduling System for Healthcare appointments with RPA technology - Bots gather 
 ( insurance information, appointment request, location preferences )
 
 # Technological Stack
-Development: MERN stack based project
+Development: MERN stack based project 
+
 Deployment: Docker
