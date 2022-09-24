@@ -7,5 +7,4 @@ Development: MERN stack based project
 
 Deployment: Docker
 
-# Commits
-Parth's first push
+# Steps to Deploy
