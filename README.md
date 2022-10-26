@@ -11,10 +11,10 @@ Scheduling System for Healthcare appointments with RPA technology - Bots gather 
 
 ## Run Steps
 - git clone https://github.com/SMART-Scheduling-System/Scheduling-System.git
-###Backend
+### Backend
 - npm run serve
 
-###Frontend
+### Frontend
 - cd client/
 - npm install
 - npm start
