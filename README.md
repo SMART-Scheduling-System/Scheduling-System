@@ -18,3 +18,7 @@ Scheduling System for Healthcare appointments with RPA technology - Bots gather 
 - cd client/
 - npm install
 - npm start
+
+### Deployment
+- docker-compose build
+- docker-compose up
