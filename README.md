@@ -9,6 +9,9 @@ Scheduling System for Healthcare appointments with RPA technology - Bots gather 
 ### Deployment: 
 - Docker
 
+### Test: 
+- jest unit testing
+
 ## Run Steps
 - git clone https://github.com/SMART-Scheduling-System/Scheduling-System.git
 ### Backend (port:5000)
@@ -22,3 +25,7 @@ Scheduling System for Healthcare appointments with RPA technology - Bots gather 
 ### Deployment
 - docker-compose build
 - docker-compose up
+
+### Test
+- cd __tests__
+- npm run test
