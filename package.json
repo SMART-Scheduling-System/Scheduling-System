@@ -17,7 +17,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node server.js --timeout 15000",
+    "test": "jest",
     "serve": "nodemon server.js "
   },
   "repository": {
@@ -32,6 +32,8 @@
   "homepage": "https://github.com/SMART-Scheduling-System/Scheduling-System#readme",
   "description": "",
   "devDependencies": {
+    "is-integer": "^1.0.7",
+    "jest": "^29.3.1",
     "nodemon": "^2.0.20"
   }
 }
