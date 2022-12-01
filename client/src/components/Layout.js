@@ -22,7 +22,7 @@ function Layout({ children }) {
       icon: "ri-file-list-line",
     },
     {
-      name: "Apply Doctor",
+      name: "Register New Doctor",
       path: "/apply-doctor",
       icon: "ri-hospital-line",
     }
@@ -39,11 +39,7 @@ function Layout({ children }) {
       path: "/doctor/appointments",
       icon: "ri-file-list-line",
     },
-    {
-      name: "Profile",
-      path: `/doctor/profile/${user?._id}`,
-      icon: "ri-user-line",
-    },
+    
   ];
 
   const adminMenu = [
@@ -62,11 +58,7 @@ function Layout({ children }) {
       path: "/admin/doctorslist",
       icon: "ri-user-star-line",
     },
-    {
-      name: "Profile",
-      path: "/profile",
-      icon: "ri-user-line",
-    },
+   
   ];
 
   const menuToBeRendered = user?.isAdmin ? adminMenu : user?.isDoctor ? doctorMenu : userMenu;
@@ -129,9 +121,9 @@ function Layout({ children }) {
                 <i className="ri-notification-line header-action-icon px-3"></i>
               </Badge>
 
-              <Link className="anchor mx-2" to="/profile">
+              <h5>
                 {user?.name}
-              </Link>
+              </h5>
             </div>
           </div>
 
