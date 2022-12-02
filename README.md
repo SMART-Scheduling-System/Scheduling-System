@@ -31,4 +31,4 @@ Scheduling System for Healthcare appointments with RPA technology - Bots gather 
 - npm run test
 
 ### Docker Hub Link
-- https://hub.docker.com/r/keravnahar/smart_schsys
+- https://hub.docker.com/r/keravnahar/scheduling-system
