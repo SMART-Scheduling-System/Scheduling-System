@@ -1,11 +1,12 @@
-version: '3.15'
+version: '1.0'
+name: 'scheduling-system'
 
 services:
   server:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: smart-backend
+    image:  keravnahar/scheduling-system:server
     container_name: smart-node-backend
     command: npm run serve
     volumes:
@@ -13,28 +14,18 @@ services:
       - /usr/src/app/node_modules
     ports:
       - "5000:5000"
-    depends_on:
-      - mongo
     env_file: ./.env
     environment:
       - NODE_ENV=development
     networks:
       - app-network
 
-  mongo:
-    image: mongo
-    volumes:
-      - data-volume:/data/db
-    ports:
-      - "27017:27017"
-    networks:
-      - app-network
       
   client:
     build:
       context: ./client
       dockerfile: Dockerfile
-    image: smart-client
+    image:  keravnahar/scheduling-system:client
     container_name: smart-react-client
     command: npm start
     volumes:
